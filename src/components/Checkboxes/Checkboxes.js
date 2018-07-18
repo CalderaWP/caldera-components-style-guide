@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import fields from '@caldera-labs/components';
+import React from 'react';
+import fields, {RenderGroup} from '@caldera-labs/components';
 import './style.css';
 
 /**
@@ -9,7 +9,8 @@ import './style.css';
  * @constructor
  */
 export const Checkboxes = (props) => {
-	const {FieldGroup} = fields;
+	const FieldGroup = fields.fields.FieldGroup;
+	const genericHandler = () => {};
 	return(
 		<div>
 			<div>
@@ -28,6 +29,7 @@ export const Checkboxes = (props) => {
 							label: 'Two'
 						}
 					]}
+					onValueChange={genericHandler}
 				/>
 
 				<FieldGroup
@@ -45,6 +47,7 @@ export const Checkboxes = (props) => {
 							label: 'Two'
 						}
 					]}
+					onValueChange={genericHandler}
 				/>
 			</div>
 

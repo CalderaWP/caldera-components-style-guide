@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import fields from '@caldera-labs/components';
 import './style.css';
 
@@ -9,7 +9,8 @@ import './style.css';
  * @constructor
  */
 export const Inputs = (props) => {
-	const {FieldGroup} = fields;
+	const FieldGroup = fields.fields.FieldGroup;
+	const genericHandler = () => {};
 	return(
 		<div>
 			<h2>Inputs</h2>
@@ -18,6 +19,7 @@ export const Inputs = (props) => {
 				label={'Required Text input'}
 				type={'input'}
 				isRequired={true}
+				onValueChange={genericHandler}
 			/>
 
 			<FieldGroup
@@ -25,6 +27,8 @@ export const Inputs = (props) => {
 				label={'Non Required Text input'}
 				type={'input'}
 				isRequired={false}
+				onValueChange={genericHandler}
+
 			/>
 
 			<FieldGroup
@@ -33,6 +37,8 @@ export const Inputs = (props) => {
 				type={'input'}
 				isRequired={true}
 				help={'Adding help text sets aria-describedby'}
+				onValueChange={genericHandler}
+
 			/>
 
 			<FieldGroup
@@ -40,11 +46,9 @@ export const Inputs = (props) => {
 				label={'Non Required Numeric input'}
 				type={'input'}
 				innertype={'number'}
-				isRequired={true}
-				value={values.two}
-				onValueChange={(newValue) => {
-					values.two=newValue;
-				}}
+				isRequired={false}
+				onValueChange={genericHandler}
+
 			/>
 
 			<FieldGroup
@@ -58,6 +62,8 @@ export const Inputs = (props) => {
 					error: true
 				}}
 				disabled={true}
+				onValueChange={genericHandler}
+
 			/>
 
 			<FieldGroup
@@ -70,6 +76,7 @@ export const Inputs = (props) => {
 					message:'Failures did not happened',
 					error: false
 				}}
+				onValueChange={genericHandler}
 			/>
 
 		</div>

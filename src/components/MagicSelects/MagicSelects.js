@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import fields from '@caldera-labs/components';
+import React from 'react';
+import {MagicFieldGroup} from '@caldera-labs/components';
 import './style.css';
 
 /**
@@ -9,7 +9,8 @@ import './style.css';
  * @constructor
  */
 export const MagicSelects = (props) => {
-	const {MagicFieldGroup} = fields;
+	console.log(MagicFieldGroup);
+	const genericHandler = () => {};
 	return(
 		<div>
 			<h2>MagicSelects</h2>
@@ -28,24 +29,10 @@ export const MagicSelects = (props) => {
 						label: 'Two'
 					}
 				]}
+				onValueChane={genericHandler}
 			/>
 
-			<MagicFieldGroup
-				type={'select'}
-				label={'Magic select field open'}
-				open={open}
-				id={'magicSelect2'}
-				options={[
-					{
-						value: 1,
-						label: 'One'
-					},
-					{
-						value: 2,
-						label: 'Two'
-					}
-				]}
-			/>
+
 
 
 		</div>
