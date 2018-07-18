@@ -11,10 +11,9 @@ import ReactMarkdown from 'react-markdown';
 
 const docs = `
 ## What Is This?
-The goals for this site are to:
-* Develop a standard style for [Caldera the Caldera Components library](https://calderalabs.org/caldera-components/) when it is used for Caldera products such as Caldera Forms. This will provide:
-  - A visual and annotated reference for our style
-  - Provide the CSS to [use with the components library](https://github.com/CalderaWP/caldera-components/issues/11) 
+The goal for this site is to develop a standard style for [Caldera the Caldera Components library](https://calderalabs.org/caldera-components/) when it is used for Caldera products such as Caldera Forms. This will provide:
+* A visual and annotated reference for our style
+* Provide the CSS to [use with the components library](https://github.com/CalderaWP/caldera-components/issues/11) 
   
 ## How To Use This App
 
@@ -24,7 +23,7 @@ This site's source is a [Github repo](https://github.com/CalderaWP/caldera-compo
 There are a few ways to make changes to CSS:
 1) Go to Github editor for the file and change the CSS and commit. Simple, takes awhile to see your changes.
 2) Import Github repo to [Glitch](https://glitch.com/about/)
-3) Clone repo locally and use local server. See README.md.
+3) Clone repo locally and use local server. This is documented [here](https://github.com/CalderaWP/caldera-components-style-guide/blob/master/README.md#development)
 
 #### CSS Files Structure
 There is a global css file at /src/App.css that is applied in every page.
