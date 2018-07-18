@@ -1,0 +1,7 @@
+[Settings]
+ID = "6ea06636-a586-4b52-ad0d-acbc1575d3bd"
+
+# Settings in the [build] context are global and are applied to all contexts unless otherwise overridden by more specific contexts.
+[build]
+  # This will be your default build command
+  command = "yarn build"
