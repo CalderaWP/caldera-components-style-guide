@@ -1,5 +1,5 @@
 import React from 'react';
-import fields, {RenderGroup} from '@caldera-labs/components';
+import fields from '@caldera-labs/components';
 import './style.css';
 
 /**

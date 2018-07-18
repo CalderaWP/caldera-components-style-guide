@@ -9,7 +9,6 @@ import './style.css';
  * @constructor
  */
 export const MagicSelects = (props) => {
-	console.log(MagicFieldGroup);
 	const genericHandler = () => {};
 	return(
 		<div>
